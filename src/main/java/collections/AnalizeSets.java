@@ -26,7 +26,7 @@ public class AnalizeSets {
         hm.put(10, "1");
         hm.put(20, "2");
         hm.put(30, "3");
-        for (var el : hm.entrySet()) {
+        for (Map.Entry<Integer, String> el : hm.entrySet()) {
             hm.merge(el.getKey(), el.getValue(), (p, c) -> p + c);
             System.out.println(el);
         }
