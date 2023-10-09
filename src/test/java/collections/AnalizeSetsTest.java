@@ -21,7 +21,6 @@ public class AnalizeSetsTest {
         Set<User> previous = new HashSet<>();
         previous.add(u1);
         previous.add(u2);
-
         Set current = Set.of(u0,u1,u2,u3,u4);
         assertThat(AnalizeSets.union(previous, current)).isEqualTo(Set.of(u0, u1, u2, u3, u4));
     }
